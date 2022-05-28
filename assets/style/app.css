@@ -5,9 +5,16 @@
   box-sizing: border-box;
 }
 
-.main {
-  background-color: red;
+body {
   font-family: "Epilogue", sans-serif;
+}
+
+.container {
+  width: 47rem;
+}
+.container .main__picture {
+  height: 10rem;
+  width: 10rem;
 }
 
 /*# sourceMappingURL=app.css.map */
