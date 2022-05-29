@@ -5,6 +5,7 @@
         &__navMenuBtn {
             position: relative;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 3rem;
@@ -22,14 +23,32 @@
             box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
             transition: all .5s ease-in-out;
         }
+
+        &__navBtnBurger::before,
+        &__navBtnBurger::after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 0.4rem;
+            background: $almostBlack;
+            border-radius: 0.2rem;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+        }
+
+        &__navBtnBurger::before {
+            transform: translateY(-0.7rem);
+        }
+        &__navBtnBurger::after {
+            transform: translateY(0.7rem);
+        }
     }
 
     .main {
         &__picture {
             height: 10rem;
             width: 10rem;
-            // background-image: url("../images/image-hero-mobile.png");
-            // background-repeat: no-repeat;
+           
         }
 
     }
