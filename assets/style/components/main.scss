@@ -1,6 +1,29 @@
 .container {
     width: 47rem;
 
+    .header {
+        &__navMenuBtn {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            border: 3px solid black;
+        }
+
+        &__navBtnBurger {
+            width: 2rem;
+            height: 0.4rem;
+            background: $almostBlack;
+            border-radius: 0.2rem;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+        }
+    }
+
     .main {
         &__picture {
             height: 10rem;
@@ -8,5 +31,6 @@
             // background-image: url("../images/image-hero-mobile.png");
             // background-repeat: no-repeat;
         }
+
     }
 }
