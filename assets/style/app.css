@@ -7,10 +7,29 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  min-height: 100vh;
 }
 
 .container {
   width: 47rem;
+}
+.container .header__navMenuBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid black;
+}
+.container .header__navBtnBurger {
+  width: 2rem;
+  height: 0.4rem;
+  background: hsl(0deg, 0%, 8%);
+  border-radius: 0.2rem;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 }
 .container .main__picture {
   height: 10rem;
