@@ -1,4 +1,4 @@
-@import url('href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,9 @@ body {
 
 .container {
   width: 47rem;
+}
+.container .header {
+  /** Animation */
 }
 .container .header__navMenuBtn {
   position: relative;
@@ -48,6 +51,17 @@ body {
 }
 .container .header__navBtnBurger::after {
   transform: translateY(0.7rem);
+}
+.container .header .header__navMenuBtn.open .header__navBtnBurger {
+  transform: translateX(-4rem);
+  background: transparent;
+  box-shadow: none;
+}
+.container .header .header__navMenuBtn.open .header__navBtnBurger::before {
+  transform: rotate(45deg) translate(2.8rem, -2.8rem);
+}
+.container .header .header__navMenuBtn.open .header__navBtnBurger::after {
+  transform: rotate(-45deg) translate(2.8rem, 2.8rem);
 }
 .container .main__picture {
   height: 10rem;

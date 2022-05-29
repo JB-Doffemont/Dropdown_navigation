@@ -1,6 +1,7 @@
 .container {
     width: 47rem;
 
+    
     .header {
         &__navMenuBtn {
             position: relative;
@@ -42,6 +43,22 @@
         &__navBtnBurger::after {
             transform: translateY(0.7rem);
         }
+
+        /** Animation */
+
+        .header__navMenuBtn.open .header__navBtnBurger {
+            transform: translateX(-4rem);
+            background: transparent;
+            box-shadow: none;
+        }
+        .header__navMenuBtn.open .header__navBtnBurger::before {
+            transform: rotate(45deg) translate(2.8rem, -2.8rem);
+              
+        }
+        .header__navMenuBtn.open .header__navBtnBurger::after {
+            transform: rotate(-45deg) translate(2.8rem, 2.8rem);
+        }
+    
     }
 
     .main {
