@@ -7,16 +7,27 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
   min-height: 100vh;
 }
 
 .container {
-  width: 47rem;
+  min-height: 100vh;
+  width: 34rem;
 }
 .container .header {
   /** Animation */
 }
+.container .header__nav {
+  display: flex;
+  align-items: center;
+  place-content: space-between;
+}
+.container .header__navLogo {
+  margin: 2rem;
+}
 .container .header__navMenuBtn {
+  margin: 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -26,7 +37,6 @@ body {
   height: 3rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  border: 3px solid black;
 }
 .container .header__navBtnBurger {
   width: 2rem;
@@ -63,9 +73,56 @@ body {
 .container .header .header__navMenuBtn.open .header__navBtnBurger::after {
   transform: rotate(-45deg) translate(2.8rem, 2.8rem);
 }
-.container .main__picture {
-  height: 10rem;
-  width: 10rem;
+.container .main {
+  display: flex;
+  flex-direction: column;
+}
+.container .main__firstPart {
+  height: 51vh;
+}
+.container .main__firstPart .main__picture img {
+  width: 34rem;
+}
+.container .main__secondPart .main__header {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 4rem;
+  font-weight: 700;
+}
+.container .main__secondPart .main__text {
+  width: 33rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 41%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.container .main__secondPart .main__button {
+  text-align: center;
+  margin-top: 2rem;
+}
+.container .main__secondPart .main__button input {
+  color: white;
+  background-color: black;
+  border-radius: 1.3rem;
+  height: 4rem;
+  width: 10.7rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.container .footer {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+.container .attribution {
+  text-align: center;
+  margin-top: 9rem;
 }
 
 /*# sourceMappingURL=app.css.map */

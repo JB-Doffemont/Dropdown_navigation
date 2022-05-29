@@ -1,9 +1,22 @@
 .container {
-    width: 47rem;
+    min-height: 100vh;
+    width: 34rem;
+    
 
     
     .header {
+        &__nav {
+            display: flex;
+            align-items: center;
+            place-content: space-between;
+        }
+
+        &__navLogo {
+            margin: 2rem;
+        }
+
         &__navMenuBtn {
+            margin: 2rem;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -13,7 +26,7 @@
             height: 3rem;
             cursor: pointer;
             transition: all .5s ease-in-out;
-            border: 3px solid black;
+            
         }
 
         &__navBtnBurger {
@@ -46,27 +59,89 @@
 
         /** Animation */
 
-        .header__navMenuBtn.open .header__navBtnBurger {
-            transform: translateX(-4rem);
-            background: transparent;
-            box-shadow: none;
-        }
-        .header__navMenuBtn.open .header__navBtnBurger::before {
-            transform: rotate(45deg) translate(2.8rem, -2.8rem);
-              
-        }
-        .header__navMenuBtn.open .header__navBtnBurger::after {
-            transform: rotate(-45deg) translate(2.8rem, 2.8rem);
-        }
+     .header__navMenuBtn.open .header__navBtnBurger {
+        transform: translateX(-4rem);
+        background: transparent;
+        box-shadow: none;
+    }
+    .header__navMenuBtn.open .header__navBtnBurger::before {
+        transform: rotate(45deg) translate(2.8rem, -2.8rem);
+          
+    }
+    .header__navMenuBtn.open .header__navBtnBurger::after {
+        transform: rotate(-45deg) translate(2.8rem, 2.8rem);
+    }
+
     
     }
 
     .main {
-        &__picture {
-            height: 10rem;
-            width: 10rem;
-           
+        display: flex;
+        flex-direction: column;
+
+        &__firstPart {
+            height: 51vh;
+       
+        .main__picture {
+            img {
+                width: 34rem;
+            }
         }
+    }
+
+        &__secondPart {
+            .main__header {
+                text-align: center;
+                font-size: 1.4rem;
+                margin-top: 4rem;
+                font-weight: 700;
+            }
+
+            .main__text {
+                width: 33rem;
+                text-align: center;
+                margin: auto;
+                margin-top: 2rem;
+                color: $mediumGray;
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 2.5rem
+            }
+
+            .main__button {
+                text-align: center;
+                margin-top: 2rem;
+                
+                input {
+                    color: white;
+                    background-color: black;
+                    border-radius: 1.3rem;
+                    height: 4rem;
+                    width: 10.7rem;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    
 
     }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .attribution {
+        text-align: center;
+        margin-top: 9rem
+    }
+
+     
 }
+
+
