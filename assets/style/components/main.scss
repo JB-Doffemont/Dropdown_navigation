@@ -1,8 +1,6 @@
 .container {
     min-height: 100vh;
-    width: 34rem;
-    
-
+    width: 23rem;
     
     .header {
         &__nav {
@@ -31,7 +29,7 @@
 
         &__navBtnBurger {
             width: 2rem;
-            height: 0.4rem;
+            height: 0.3rem;
             background: $almostBlack;
             border-radius: 0.2rem;
             box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
@@ -43,7 +41,7 @@
             content: '';
             position: absolute;
             width: 2rem;
-            height: 0.4rem;
+            height: 0.3rem;
             background: $almostBlack;
             border-radius: 0.2rem;
             box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
@@ -80,11 +78,11 @@
         flex-direction: column;
 
         &__firstPart {
-            height: 51vh;
+           
        
         .main__picture {
             img {
-                width: 34rem;
+                width: 23rem;
             }
         }
     }
@@ -92,20 +90,20 @@
         &__secondPart {
             .main__header {
                 text-align: center;
-                font-size: 1.4rem;
-                margin-top: 4rem;
+                font-size: 1.1rem;
+                margin-top: 3rem;
                 font-weight: 700;
             }
 
             .main__text {
-                width: 33rem;
+                width: 22rem;
                 text-align: center;
                 margin: auto;
-                margin-top: 2rem;
-                color: $mediumGray;
+                margin-top: 1rem;
+                color: hsl(0deg, 0%, 41%);
                 font-weight: 700;
-                font-size: 1.5rem;
-                line-height: 2.5rem
+                font-size: 1rem;
+                line-height: 1.7rem;
             }
 
             .main__button {
@@ -134,6 +132,10 @@
         justify-content: space-around;
         align-items: center;
         margin-top: 5rem;
+
+    img {
+        width: 4rem;
+    }
     }
 
     .attribution {
