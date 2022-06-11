@@ -123,6 +123,12 @@ body {
   height: 2.5rem;
   background-color: hsl(0deg, 0%, 98%);
 }
+.container .header__navMenu .dropdownFeatures {
+  display: none;
+}
+.container .header__navMenu .dropdownCompagny {
+  display: none;
+}
 .container .header .show {
   display: block;
 }
