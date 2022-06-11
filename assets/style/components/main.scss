@@ -94,11 +94,10 @@
         .dropdown{
             display: none;
             position: absolute;
-            z-index: -1;
             top: 0;
-            right: -2.1rem;
+            right: 0;
             background-color: $almostWhite;
-            width: 14rem;
+            width: 15rem;
             height: 100vh;
 
             a{
@@ -109,7 +108,7 @@
             }
 
             .links{
-                margin-top: 4rem;
+                margin-top: 6rem;
             }
 
             .buttons{

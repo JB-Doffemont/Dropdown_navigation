@@ -97,11 +97,10 @@ body {
 .container .header__navMenu .dropdown {
   display: none;
   position: absolute;
-  z-index: -1;
   top: 0;
-  right: -2.1rem;
+  right: 0;
   background-color: hsl(0deg, 0%, 98%);
-  width: 14rem;
+  width: 15rem;
   height: 100vh;
 }
 .container .header__navMenu .dropdown a {
@@ -111,7 +110,7 @@ body {
   margin: 2rem;
 }
 .container .header__navMenu .dropdown .links {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .container .header__navMenu .dropdown .buttons {
   display: flex;
