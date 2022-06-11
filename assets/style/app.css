@@ -95,6 +95,7 @@ body {
   display: inline-block;
 }
 .container .header__navMenu .dropdown {
+  display: none;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -122,6 +123,9 @@ body {
   border-radius: 0.9rem;
   height: 2.5rem;
   background-color: hsl(0deg, 0%, 98%);
+}
+.container .header .show {
+  display: block;
 }
 .container .main {
   display: flex;
