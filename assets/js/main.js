@@ -1,8 +1,9 @@
 const menuBtn = document.querySelector(".header__navMenuBtn");
+const sideNav = document.querySelector(".header__navBtnBurger");
+
 let menuOpen = false;
 
 menuBtn.addEventListener("click", () => {
-  console.log("toto");
   if (!menuOpen) {
     menuBtn.classList.add("open");
     menuOpen = true;
