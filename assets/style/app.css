@@ -116,21 +116,53 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container .header__navMenu .dropdown .buttons .login {
+  border: none;
+}
 .container .header__navMenu .dropdown .buttons button {
   margin: 0.3rem 1.3rem;
+  color: hsl(0deg, 0%, 41%);
   border-color: hsl(0deg, 0%, 41%);
   border-radius: 0.9rem;
   height: 2.5rem;
   background-color: hsl(0deg, 0%, 98%);
 }
+.container .header__navMenu .featuresHeader {
+  display: flex;
+  height: 3rem;
+}
 .container .header__navMenu .dropdownFeatures {
   display: none;
+}
+.container .header__navMenu .dropdownFeatures .linksFeatures {
+  margin-left: 1rem;
+}
+.container .header__navMenu .compagnyHeader {
+  display: flex;
+  height: 3rem;
 }
 .container .header__navMenu .dropdownCompagny {
   display: none;
 }
+.container .header__navMenu .dropdownCompagny .linksCompagny {
+  margin-left: 1rem;
+}
 .container .header .show {
   display: block;
+}
+.container .header .down {
+  background: url("./../images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 2.3rem;
+}
+.container .header .up {
+  background: url("./../images/icon-arrow-up.svg");
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 2.3rem;
 }
 .container .main {
   display: flex;
