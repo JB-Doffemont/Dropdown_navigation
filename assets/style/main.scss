@@ -2,7 +2,6 @@
     min-height: 100vh;
     width: 23rem;
     margin: auto;
-
     /**
     * header
     */
@@ -160,18 +159,21 @@
         display:block
     }
 
+    /**
+    * Arrows dropdown
+    */
     .down {
         background: url("./../images/icon-arrow-down.svg");
         background-repeat: no-repeat;
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
         margin-top: 2.3rem;
     }
     .up {
         background: url("./../images/icon-arrow-up.svg");
         background-repeat: no-repeat;
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
         margin-top: 2.3rem;
     }
     }
@@ -252,5 +254,15 @@
 
      
 }
+
+.overlay {
+    height: 100vh;
+    width: 23rem;
+    background-color: $mediumGray;
+    opacity: 1;
+    
+}
+
+
 
 

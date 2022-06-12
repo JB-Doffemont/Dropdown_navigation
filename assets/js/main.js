@@ -3,25 +3,34 @@ const sideNav = document.querySelector(".header__navBtnBurger");
 const dropdown = document.querySelector(".dropdown");
 const dropdownFeatures = document.querySelector(".dropdownFeatures");
 const dropdownCompagny = document.querySelector(".dropdownCompagny");
-let img = document.querySelector(".down");
+let imgFeatures = document.querySelector("#imgFeatures");
+let imgCompagny = document.querySelector("#imgCompagny");
+let container = document.querySelector(".container");
 
 let menuOpen = false;
 
 function showMenu() {
   dropdown.classList.toggle("show");
+  container.classList.toggle("overlay");
 }
 function showFeatures() {
   dropdownFeatures.classList.toggle("show");
 
-  if (img.classList == "down") {
-    img.classList = "up";
+  if (imgFeatures.classList == "down") {
+    imgFeatures.classList = "up";
   } else {
-    img.classList = "down";
+    imgFeatures.classList = "down";
   }
 }
 
 function showCompagny() {
   dropdownCompagny.classList.toggle("show");
+
+  if (imgCompagny.classList == "down") {
+    imgCompagny.classList = "up";
+  } else {
+    imgCompagny.classList = "down";
+  }
 }
 
 menuBtn.addEventListener("click", () => {
