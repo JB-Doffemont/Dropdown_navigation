@@ -248,14 +248,42 @@ body {
     display: flex;
     position: absolute;
     top: 1rem;
-    right: 65rem;
+    right: 63rem;
   }
   .container .header .dropdown .links .featuresHeader {
-    width: 10rem;
+    width: 11rem;
+    margin-left: 4rem;
   }
   .container .header .dropdown .links .linksFeatures {
-    width: 10rem;
+    width: 13rem;
+    height: 13rem;
     margin-left: 0;
+    margin-top: 3rem;
+    box-shadow: 1px 1px 50px 0px hsl(0deg, 0%, 77%);
+    text-align: center;
+    border-radius: 1rem;
+  }
+  .container .header .dropdown .links .linksFeatures a {
+    padding: 1rem;
+    margin: 0;
+  }
+  .container .header .dropdown .links .compagnyHeader {
+    width: 11rem;
+    margin-right: 2rem;
+  }
+  .container .header .dropdown .links .linksCompagny {
+    width: 11rem;
+    height: 10rem;
+    margin-left: 0;
+    margin-top: 3rem;
+    box-shadow: 1px 1px 50px 0px hsl(0deg, 0%, 77%);
+    text-align: center;
+    border-radius: 1rem;
+    margin-left: 2rem;
+  }
+  .container .header .dropdown .links .linksCompagny a {
+    padding: 1rem;
+    margin: 0;
   }
   .container .header .dropdown .buttons {
     display: inline;

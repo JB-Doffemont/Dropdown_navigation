@@ -289,15 +289,47 @@
                         display: flex;
                         position: absolute;
                         top: 1rem;
-                        right: 65rem;
+                        right: 63rem;
 
                         .featuresHeader {
-                            width: 10rem;
+                            width: 11rem;
+                            margin-left: 4rem;
                         }
 
                         .linksFeatures {
-                            width: 10rem;
+                            width: 13rem;
+                            height: 13rem;
                             margin-left: 0;
+                            margin-top: 3rem;
+                            box-shadow: 1px 1px 50px 0px hsl(0deg 0% 77%);
+                            text-align: center;
+                            border-radius: 1rem;
+
+                            a {
+                                padding: 1rem;
+                                margin: 0;
+                            }
+                        }
+
+                        .compagnyHeader {
+                            width: 11rem;
+                            margin-right: 2rem;
+                        }
+
+                        .linksCompagny {
+                            width: 11rem;
+                            height: 10rem;
+                            margin-left: 0;
+                            margin-top: 3rem;
+                            box-shadow: 1px 1px 50px 0px hsl(0deg 0% 77%);
+                            text-align: center;
+                            border-radius: 1rem;
+                            margin-left: 2rem;
+
+                            a {
+                                padding: 1rem;
+                                margin: 0;
+                            }
                         }
                     }
 
