@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
 }
 
 body {
@@ -219,6 +220,50 @@ body {
   margin-top: 4rem;
 }
 
+/**
+    * Media queries
+    */
+@media only screen and (min-width: 1440px) {
+  .container {
+    width: 113rem;
+  }
+  .container .header__navLogo {
+    margin: 2.5rem;
+    width: 6rem;
+  }
+  .container .header__nav {
+    align-items: initial;
+  }
+  .container .header__navMenuBtn {
+    display: none;
+  }
+  .container .header .dropdown {
+    display: flex;
+    height: 8rem;
+    align-items: center;
+    width: 23rem;
+  }
+  .container .header .dropdown .links {
+    margin-top: 0;
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 65rem;
+  }
+  .container .header .dropdown .links .featuresHeader {
+    width: 10rem;
+  }
+  .container .header .dropdown .links .linksFeatures {
+    width: 10rem;
+    margin-left: 0;
+  }
+  .container .header .dropdown .buttons {
+    display: inline;
+  }
+  .container .header .dropdown .buttons button {
+    width: 7rem;
+  }
+}
 .overlay {
   height: 100vh;
   width: 23rem;

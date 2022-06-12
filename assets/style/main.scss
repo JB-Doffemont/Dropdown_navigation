@@ -252,8 +252,68 @@
         margin-top: 4rem
     }
 
-     
 }
+
+/**
+    * Media queries
+    */
+
+    @media only screen and (min-width: 1440px){
+
+        .container {
+            width: 113rem;
+            
+            .header {
+
+                &__navLogo {
+                    margin: 2.5rem;
+                    width: 6rem;
+                }
+
+                &__nav {
+                    align-items: initial;
+                }
+                &__navMenuBtn {
+                    display: none;
+                }
+
+                .dropdown {
+                    display: flex;
+                    height: 8rem;
+                    align-items: center;
+                    width: 23rem;
+
+
+                    .links {
+                        margin-top: 0;
+                        display: flex;
+                        position: absolute;
+                        top: 1rem;
+                        right: 65rem;
+
+                        .featuresHeader {
+                            width: 10rem;
+                        }
+
+                        .linksFeatures {
+                            width: 10rem;
+                            margin-left: 0;
+                        }
+                    }
+
+                    .buttons {
+                        display: inline;
+                        
+                        button {
+                            width: 7rem;
+                        }
+                    }
+                }
+            }
+            }
+           
+        
+    }
 
 .overlay {
     height: 100vh;
