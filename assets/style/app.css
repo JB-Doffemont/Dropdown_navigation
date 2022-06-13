@@ -245,7 +245,7 @@ body {
   }
   .container .header .dropdown {
     display: flex;
-    height: 8rem;
+    height: 7rem;
     align-items: center;
     width: 23rem;
   }
@@ -253,8 +253,12 @@ body {
     margin-top: 0;
     display: flex;
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 64rem;
+  }
+  .container .header .dropdown .links a:hover {
+    cursor: pointer;
+    color: hsl(0deg, 0%, 8%);
   }
   .container .header .dropdown .links .featuresHeader {
     width: 11rem;
@@ -297,6 +301,10 @@ body {
   .container .header .dropdown .buttons button {
     width: 7rem;
   }
+  .container .header .dropdown .buttons button:hover {
+    cursor: pointer;
+    color: hsl(0deg, 0%, 8%);
+  }
   .container .main {
     display: flex;
     flex-direction: row-reverse;
@@ -310,7 +318,7 @@ body {
     height: 40rem;
   }
   .container .main .main__firstPart .main__picture img {
-    width: 45rem;
+    width: 49rem;
     height: 45rem;
   }
   .container .main .main__secondPart {
@@ -339,6 +347,9 @@ body {
     background-color: hsl(0deg, 0%, 98%);
     border-color: hsl(0deg, 0%, 8%);
     color: hsl(0deg, 0%, 8%);
+  }
+  .container .main .main__secondPart .main__button input:hover {
+    cursor: pointer;
   }
   .container .footer {
     margin: 0;
