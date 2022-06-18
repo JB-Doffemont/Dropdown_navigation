@@ -23,9 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop_design](./assets/images/image-hero-desktop.png)
+![Desktop_design](./assets/design/Desktop-Snap-Dropdown-navigation.png)
 
-![Mobile_design](./assets/images/image-hero-mobile.png)
+![Mobile_design](./assets/design/Mobile-Snap-Dropdown-navigation.png)
 
 ### Links
 
